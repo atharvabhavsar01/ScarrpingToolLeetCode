@@ -1,0 +1,865 @@
+[
+  {
+    "id": "two-sum",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "description": "Given an array of integers \nnums\n and an integer \ntarget\n, return \nindices of the two numbers such that they add up to \ntarget\n.\n\n\nYou may assume that each input would have \nexactly\n one solution\n, and you may not use the \nsame\n element twice.\n\n\nYou can return the answer in any order.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [2,7,11,15], target = 9\n\nOutput:\n [0,1]\n\nExplanation:\n Because nums[0] + nums[1] == 9, we return [0, 1].\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [3,2,4], target = 6\n\nOutput:\n [1,2]\n\n\n\nExample 3:\n\n\n\n\nInput:\n nums = [3,3], target = 6\n\nOutput:\n [0,1]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n2 <= nums.length <= 10\n4\n\n\n-10\n9\n <= nums[i] <= 10\n9\n\n\n-10\n9\n <= target <= 10\n9\n\n\nOnly one valid answer exists.\n\n\n\n\n \n\n\nFollow-up: \nCan you come up with an algorithm that is less than \nO(n\n2\n)\n \ntime complexity?",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "url": "https://leetcode.com/problems/two-sum/"
+  },
+  {
+    "id": "add-two-numbers",
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "description": "You are given two \nnon-empty\n linked lists representing two non-negative integers. The digits are stored in \nreverse order\n, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n l1 = [2,4,3], l2 = [5,6,4]\n\nOutput:\n [7,0,8]\n\nExplanation:\n 342 + 465 = 807.\n\n\n\nExample 2:\n\n\n\n\nInput:\n l1 = [0], l2 = [0]\n\nOutput:\n [0]\n\n\n\nExample 3:\n\n\n\n\nInput:\n l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\n\nOutput:\n [8,9,9,9,0,0,0,1]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nThe number of nodes in each linked list is in the range \n[1, 100]\n.\n\n\n0 <= Node.val <= 9\n\n\nIt is guaranteed that the list represents a number that does not have leading zeros.",
+    "tags": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  {
+    "id": "longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "description": "Given a string \ns\n, find the length of the \nlongest\n \nsubstring\n without duplicate characters.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"abcabcbb\"\n\nOutput:\n 3\n\nExplanation:\n The answer is \"abc\", with the length of 3.\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"bbbbb\"\n\nOutput:\n 1\n\nExplanation:\n The answer is \"b\", with the length of 1.\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"pwwkew\"\n\nOutput:\n 3\n\nExplanation:\n The answer is \"wke\", with the length of 3.\nNotice that the answer must be a substring, \"pwke\" is a subsequence and not a substring.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= s.length <= 5 * 10\n4\n\n\ns\n consists of English letters, digits, symbols and spaces.",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+  },
+  {
+    "id": "median-of-two-sorted-arrays",
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "description": "Given two sorted arrays \nnums1\n and \nnums2\n of size \nm\n and \nn\n respectively, return \nthe median\n of the two sorted arrays.\n\n\nThe overall run time complexity should be \nO(log (m+n))\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums1 = [1,3], nums2 = [2]\n\nOutput:\n 2.00000\n\nExplanation:\n merged array = [1,2,3] and median is 2.\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums1 = [1,2], nums2 = [3,4]\n\nOutput:\n 2.50000\n\nExplanation:\n merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.\n\n\n\n \n\n\nConstraints:\n\n\n\n\nnums1.length == m\n\n\nnums2.length == n\n\n\n0 <= m <= 1000\n\n\n0 <= n <= 1000\n\n\n1 <= m + n <= 2000\n\n\n-10\n6\n <= nums1[i], nums2[i] <= 10\n6",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer"
+    ],
+    "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+  },
+  {
+    "id": "longest-palindromic-substring",
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "description": "Given a string \ns\n, return \nthe longest\n \npalindromic\n \nsubstring\n in \ns\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"babad\"\n\nOutput:\n \"bab\"\n\nExplanation:\n \"aba\" is also a valid answer.\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"cbbd\"\n\nOutput:\n \"bb\"\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 1000\n\n\ns\n consist of only digits and English letters.",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming"
+    ],
+    "url": "https://leetcode.com/problems/longest-palindromic-substring/"
+  },
+  {
+    "id": "zigzag-conversion",
+    "title": "Zigzag Conversion",
+    "difficulty": "Medium",
+    "description": "The string \n\"PAYPALISHIRING\"\n is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)\n\n\n\nP   A   H   N\nA P L S I I G\nY   I   R\n\n\n\nAnd then read line by line: \n\"PAHNAPLSIIGYIR\"\n\n\nWrite the code that will take a string and make this conversion given a number of rows:\n\n\n\nstring convert(string s, int numRows);\n\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"PAYPALISHIRING\", numRows = 3\n\nOutput:\n \"PAHNAPLSIIGYIR\"\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"PAYPALISHIRING\", numRows = 4\n\nOutput:\n \"PINALSIGYAHRPI\"\n\nExplanation:\n\nP     I    N\nA   L S  I G\nY A   H R\nP     I\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"A\", numRows = 1\n\nOutput:\n \"A\"\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 1000\n\n\ns\n consists of English letters (lower-case and upper-case), \n','\n and \n'.'\n.\n\n\n1 <= numRows <= 1000",
+    "tags": [
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/zigzag-conversion/"
+  },
+  {
+    "id": "reverse-integer",
+    "title": "Reverse Integer",
+    "difficulty": "Medium",
+    "description": "Given a signed 32-bit integer \nx\n, return \nx\n with its digits reversed\n. If reversing \nx\n causes the value to go outside the signed 32-bit integer range \n[-2\n31\n, 2\n31\n - 1]\n, then return \n0\n.\n\n\nAssume the environment does not allow you to store 64-bit integers (signed or unsigned).\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n x = 123\n\nOutput:\n 321\n\n\n\nExample 2:\n\n\n\n\nInput:\n x = -123\n\nOutput:\n -321\n\n\n\nExample 3:\n\n\n\n\nInput:\n x = 120\n\nOutput:\n 21\n\n\n\n \n\n\nConstraints:\n\n\n\n\n-2\n31\n <= x <= 2\n31\n - 1",
+    "tags": [
+      "Math"
+    ],
+    "url": "https://leetcode.com/problems/reverse-integer/"
+  },
+  {
+    "id": "string-to-integer-atoi",
+    "title": "String to Integer (atoi)",
+    "difficulty": "Medium",
+    "description": "Implement the \nmyAtoi(string s)\n function, which converts a string to a 32-bit signed integer.\n\n\nThe algorithm for \nmyAtoi(string s)\n is as follows:\n\n\n\n\nWhitespace\n: Ignore any leading whitespace (\n\" \"\n).\n\n\nSignedness\n: Determine the sign by checking if the next character is \n'-'\n or \n'+'\n, assuming positivity if neither present.\n\n\nConversion\n: Read the integer by skipping leading zeros until a non-digit character is encountered or the end of the string is reached. If no digits were read, then the result is 0.\n\n\nRounding\n: If the integer is out of the 32-bit signed integer range \n[-2\n31\n, 2\n31\n - 1]\n, then round the integer to remain in the range. Specifically, integers less than \n-2\n31\n should be rounded to \n-2\n31\n, and integers greater than \n2\n31\n - 1\n should be rounded to \n2\n31\n - 1\n.\n\n\n\n\nReturn the integer as the final result.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \ns = \"42\"\n\n\nOutput:\n \n42\n\n\nExplanation:\n\n\n\nThe underlined characters are what is read in and the caret is the current reader position.\nStep 1: \"42\" (no characters read because there is no leading whitespace)\n         ^\nStep 2: \"42\" (no characters read because there is neither a '-' nor '+')\n         ^\nStep 3: \"\n42\n\" (\"42\" is read in)\n           ^\n\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \ns = \" -042\"\n\n\nOutput:\n \n-42\n\n\nExplanation:\n\n\n\nStep 1: \"\n   \n-042\" (leading whitespace is read and ignored)\n            ^\nStep 2: \"   \n-\n042\" ('-' is read, so the result should be negative)\n             ^\nStep 3: \"   -\n042\n\" (\"042\" is read in, leading zeros ignored in the result)\n               ^\n\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \ns = \"1337c0d3\"\n\n\nOutput:\n \n1337\n\n\nExplanation:\n\n\n\nStep 1: \"1337c0d3\" (no characters read because there is no leading whitespace)\n         ^\nStep 2: \"1337c0d3\" (no characters read because there is neither a '-' nor '+')\n         ^\nStep 3: \"\n1337\nc0d3\" (\"1337\" is read in; reading stops because the next character is a non-digit)\n             ^\n\n\n\n\n\nExample 4:\n\n\n\n\nInput:\n \ns = \"0-1\"\n\n\nOutput:\n \n0\n\n\nExplanation:\n\n\n\nStep 1: \"0-1\" (no characters read because there is no leading whitespace)\n         ^\nStep 2: \"0-1\" (no characters read because there is neither a '-' nor '+')\n         ^\nStep 3: \"\n0\n-1\" (\"0\" is read in; reading stops because the next character is a non-digit)\n          ^\n\n\n\n\n\nExample 5:\n\n\n\n\nInput:\n \ns = \"words and 987\"\n\n\nOutput:\n \n0\n\n\nExplanation:\n\n\nReading stops at the first non-digit character 'w'.\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= s.length <= 200\n\n\ns\n consists of English letters (lower-case and upper-case), digits (\n0-9\n), \n' '\n, \n'+'\n, \n'-'\n, and \n'.'\n.",
+    "tags": [
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  {
+    "id": "palindrome-number",
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "description": "Given an integer \nx\n, return \ntrue\n if \nx\n is a \npalindrome\n, and \nfalse\n otherwise\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n x = 121\n\nOutput:\n true\n\nExplanation:\n 121 reads as 121 from left to right and from right to left.\n\n\n\nExample 2:\n\n\n\n\nInput:\n x = -121\n\nOutput:\n false\n\nExplanation:\n From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.\n\n\n\nExample 3:\n\n\n\n\nInput:\n x = 10\n\nOutput:\n false\n\nExplanation:\n Reads 01 from right to left. Therefore it is not a palindrome.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n-2\n31\n <= x <= 2\n31\n - 1\n\n\n\n\n \n\n\nFollow up:\n Could you solve it without converting the integer to a string?",
+    "tags": [
+      "Math"
+    ],
+    "url": "https://leetcode.com/problems/palindrome-number/"
+  },
+  {
+    "id": "regular-expression-matching",
+    "title": "Regular Expression Matching",
+    "difficulty": "Hard",
+    "description": "Given an input string \ns\n and a pattern \np\n, implement regular expression matching with support for \n'.'\n and \n'*'\n where:\n\n\n\n\n'.'\n Matches any single character.​​​​\n\n\n'*'\n Matches zero or more of the preceding element.\n\n\n\n\nThe matching should cover the \nentire\n input string (not partial).\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"aa\", p = \"a\"\n\nOutput:\n false\n\nExplanation:\n \"a\" does not match the entire string \"aa\".\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"aa\", p = \"a*\"\n\nOutput:\n true\n\nExplanation:\n '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes \"aa\".\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"ab\", p = \".*\"\n\nOutput:\n true\n\nExplanation:\n \".*\" means \"zero or more (*) of any character (.)\".\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 20\n\n\n1 <= p.length <= 20\n\n\ns\n contains only lowercase English letters.\n\n\np\n contains only lowercase English letters, \n'.'\n, and \n'*'\n.\n\n\nIt is guaranteed for each appearance of the character \n'*'\n, there will be a previous valid character to match.",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/regular-expression-matching/"
+  },
+  {
+    "id": "container-with-most-water",
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "description": "You are given an integer array \nheight\n of length \nn\n. There are \nn\n vertical lines drawn such that the two endpoints of the \ni\nth\n line are \n(i, 0)\n and \n(i, height[i])\n.\n\n\nFind two lines that together with the x-axis form a container, such that the container contains the most water.\n\n\nReturn \nthe maximum amount of water a container can store\n.\n\n\nNotice\n that you may not slant the container.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n height = [1,8,6,2,5,4,8,3,7]\n\nOutput:\n 49\n\nExplanation:\n The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.\n\n\n\nExample 2:\n\n\n\n\nInput:\n height = [1,1]\n\nOutput:\n 1\n\n\n\n \n\n\nConstraints:\n\n\n\n\nn == height.length\n\n\n2 <= n <= 10\n5\n\n\n0 <= height[i] <= 10\n4",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Greedy"
+    ],
+    "url": "https://leetcode.com/problems/container-with-most-water/"
+  },
+  {
+    "id": "integer-to-roman",
+    "title": "Integer to Roman",
+    "difficulty": "Medium",
+    "description": "Seven different symbols represent Roman numerals with the following values:\n\n\n\n\n\n\n\n\nSymbol\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nI\n\n\n1\n\n\n\n\n\n\nV\n\n\n5\n\n\n\n\n\n\nX\n\n\n10\n\n\n\n\n\n\nL\n\n\n50\n\n\n\n\n\n\nC\n\n\n100\n\n\n\n\n\n\nD\n\n\n500\n\n\n\n\n\n\nM\n\n\n1000\n\n\n\n\n\n\n\n\nRoman numerals are formed by appending the conversions of decimal place values from highest to lowest. Converting a decimal place value into a Roman numeral has the following rules:\n\n\n\n\nIf the value does not start with 4 or 9, select the symbol of the maximal value that can be subtracted from the input, append that symbol to the result, subtract its value, and convert the remainder to a Roman numeral.\n\n\nIf the value starts with 4 or 9 use the \nsubtractive form\n representing one symbol subtracted from the following symbol, for example, 4 is 1 (\nI\n) less than 5 (\nV\n): \nIV\n and 9 is 1 (\nI\n) less than 10 (\nX\n): \nIX\n. Only the following subtractive forms are used: 4 (\nIV\n), 9 (\nIX\n), 40 (\nXL\n), 90 (\nXC\n), 400 (\nCD\n) and 900 (\nCM\n).\n\n\nOnly powers of 10 (\nI\n, \nX\n, \nC\n, \nM\n) can be appended consecutively at most 3 times to represent multiples of 10. You cannot append 5 (\nV\n), 50 (\nL\n), or 500 (\nD\n) multiple times. If you need to append a symbol 4 times use the \nsubtractive form\n.\n\n\n\n\nGiven an integer, convert it to a Roman numeral.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \nnum = 3749\n\n\nOutput:\n \n\"MMMDCCXLIX\"\n\n\nExplanation:\n\n\n\n3000 = MMM as 1000 (M) + 1000 (M) + 1000 (M)\n 700 = DCC as 500 (D) + 100 (C) + 100 (C)\n  40 = XL as 10 (X) less of 50 (L)\n   9 = IX as 1 (I) less of 10 (X)\nNote: 49 is not 1 (I) less of 50 (L) because the conversion is based on decimal places\n\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \nnum = 58\n\n\nOutput:\n \n\"LVIII\"\n\n\nExplanation:\n\n\n\n50 = L\n 8 = VIII\n\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \nnum = 1994\n\n\nOutput:\n \n\"MCMXCIV\"\n\n\nExplanation:\n\n\n\n1000 = M\n 900 = CM\n  90 = XC\n   4 = IV\n\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= num <= 3999",
+    "tags": [
+      "Hash Table",
+      "Math",
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/integer-to-roman/"
+  },
+  {
+    "id": "roman-to-integer",
+    "title": "Roman to Integer",
+    "difficulty": "Easy",
+    "description": "Roman numerals are represented by seven different symbols: \nI\n, \nV\n, \nX\n, \nL\n, \nC\n, \nD\n and \nM\n.\n\n\n\n\nSymbol\n       \nValue\n\nI             1\nV             5\nX             10\nL             50\nC             100\nD             500\nM             1000\n\n\nFor example, \n2\n is written as \nII\n in Roman numeral, just two ones added together. \n12\n is written as \nXII\n, which is simply \nX + II\n. The number \n27\n is written as \nXXVII\n, which is \nXX + V + II\n.\n\n\nRoman numerals are usually written largest to smallest from left to right. However, the numeral for four is not \nIIII\n. Instead, the number four is written as \nIV\n. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as \nIX\n. There are six instances where subtraction is used:\n\n\n\n\nI\n can be placed before \nV\n (5) and \nX\n (10) to make 4 and 9. \n\n\nX\n can be placed before \nL\n (50) and \nC\n (100) to make 40 and 90. \n\n\nC\n can be placed before \nD\n (500) and \nM\n (1000) to make 400 and 900.\n\n\n\n\nGiven a roman numeral, convert it to an integer.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"III\"\n\nOutput:\n 3\n\nExplanation:\n III = 3.\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"LVIII\"\n\nOutput:\n 58\n\nExplanation:\n L = 50, V= 5, III = 3.\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"MCMXCIV\"\n\nOutput:\n 1994\n\nExplanation:\n M = 1000, CM = 900, XC = 90 and IV = 4.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 15\n\n\ns\n contains only the characters \n('I', 'V', 'X', 'L', 'C', 'D', 'M')\n.\n\n\nIt is \nguaranteed\n that \ns\n is a valid roman numeral in the range \n[1, 3999]\n.",
+    "tags": [
+      "Hash Table",
+      "Math",
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/roman-to-integer/"
+  },
+  {
+    "id": "longest-common-prefix",
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "description": "Write a function to find the longest common prefix string amongst an array of strings.\n\n\nIf there is no common prefix, return an empty string \n\"\"\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n strs = [\"flower\",\"flow\",\"flight\"]\n\nOutput:\n \"fl\"\n\n\n\nExample 2:\n\n\n\n\nInput:\n strs = [\"dog\",\"racecar\",\"car\"]\n\nOutput:\n \"\"\n\nExplanation:\n There is no common prefix among the input strings.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= strs.length <= 200\n\n\n0 <= strs[i].length <= 200\n\n\nstrs[i]\n consists of only lowercase English letters if it is non-empty.",
+    "tags": [
+      "Array",
+      "String",
+      "Trie"
+    ],
+    "url": "https://leetcode.com/problems/longest-common-prefix/"
+  },
+  {
+    "id": "3sum",
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "description": "Given an integer array nums, return all the triplets \n[nums[i], nums[j], nums[k]]\n such that \ni != j\n, \ni != k\n, and \nj != k\n, and \nnums[i] + nums[j] + nums[k] == 0\n.\n\n\nNotice that the solution set must not contain duplicate triplets.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [-1,0,1,2,-1,-4]\n\nOutput:\n [[-1,-1,2],[-1,0,1]]\n\nExplanation:\n \nnums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.\nnums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.\nnums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.\nThe distinct triplets are [-1,0,1] and [-1,-1,2].\nNotice that the order of the output and the order of the triplets does not matter.\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [0,1,1]\n\nOutput:\n []\n\nExplanation:\n The only possible triplet does not sum up to 0.\n\n\n\nExample 3:\n\n\n\n\nInput:\n nums = [0,0,0]\n\nOutput:\n [[0,0,0]]\n\nExplanation:\n The only possible triplet sums up to 0.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n3 <= nums.length <= 3000\n\n\n-10\n5\n <= nums[i] <= 10\n5",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/3sum/"
+  },
+  {
+    "id": "3sum-closest",
+    "title": "3Sum Closest",
+    "difficulty": "Medium",
+    "description": "Given an integer array \nnums\n of length \nn\n and an integer \ntarget\n, find three integers in \nnums\n such that the sum is closest to \ntarget\n.\n\n\nReturn \nthe sum of the three integers\n.\n\n\nYou may assume that each input would have exactly one solution.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [-1,2,1,-4], target = 1\n\nOutput:\n 2\n\nExplanation:\n The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [0,0,0], target = 1\n\nOutput:\n 0\n\nExplanation:\n The sum that is closest to the target is 0. (0 + 0 + 0 = 0).\n\n\n\n \n\n\nConstraints:\n\n\n\n\n3 <= nums.length <= 500\n\n\n-1000 <= nums[i] <= 1000\n\n\n-10\n4\n <= target <= 10\n4",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/3sum-closest/"
+  },
+  {
+    "id": "letter-combinations-of-a-phone-number",
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "description": "Given a string containing digits from \n2-9\n inclusive, return all possible letter combinations that the number could represent. Return the answer in \nany order\n.\n\n\nA mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.\n\n\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n digits = \"23\"\n\nOutput:\n [\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]\n\n\n\nExample 2:\n\n\n\n\nInput:\n digits = \"\"\n\nOutput:\n []\n\n\n\nExample 3:\n\n\n\n\nInput:\n digits = \"2\"\n\nOutput:\n [\"a\",\"b\",\"c\"]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= digits.length <= 4\n\n\ndigits[i]\n is a digit in the range \n['2', '9']\n.",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+  },
+  {
+    "id": "4sum",
+    "title": "4Sum",
+    "difficulty": "Medium",
+    "description": "Given an array \nnums\n of \nn\n integers, return \nan array of all the \nunique\n quadruplets\n \n[nums[a], nums[b], nums[c], nums[d]]\n such that:\n\n\n\n\n0 <= a, b, c, d < n\n\n\na\n, \nb\n, \nc\n, and \nd\n are \ndistinct\n.\n\n\nnums[a] + nums[b] + nums[c] + nums[d] == target\n\n\n\n\nYou may return the answer in \nany order\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [1,0,-1,0,-2,2], target = 0\n\nOutput:\n [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [2,2,2,2,2], target = 8\n\nOutput:\n [[2,2,2,2]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 200\n\n\n-10\n9\n <= nums[i] <= 10\n9\n\n\n-10\n9\n <= target <= 10\n9",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/4sum/"
+  },
+  {
+    "id": "remove-nth-node-from-end-of-list",
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "description": "Given the \nhead\n of a linked list, remove the \nn\nth\n node from the end of the list and return its head.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n head = [1,2,3,4,5], n = 2\n\nOutput:\n [1,2,3,5]\n\n\n\nExample 2:\n\n\n\n\nInput:\n head = [1], n = 1\n\nOutput:\n []\n\n\n\nExample 3:\n\n\n\n\nInput:\n head = [1,2], n = 1\n\nOutput:\n [1]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nThe number of nodes in the list is \nsz\n.\n\n\n1 <= sz <= 30\n\n\n0 <= Node.val <= 100\n\n\n1 <= n <= sz\n\n\n\n\n \n\n\nFollow up:\n Could you do this in one pass?",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+  },
+  {
+    "id": "valid-parentheses",
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "description": "Given a string \ns\n containing just the characters \n'('\n, \n')'\n, \n'{'\n, \n'}'\n, \n'['\n and \n']'\n, determine if the input string is valid.\n\n\nAn input string is valid if:\n\n\n\n\nOpen brackets must be closed by the same type of brackets.\n\n\nOpen brackets must be closed in the correct order.\n\n\nEvery close bracket has a corresponding open bracket of the same type.\n\n\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \ns = \"()\"\n\n\nOutput:\n \ntrue\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \ns = \"()[]{}\"\n\n\nOutput:\n \ntrue\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \ns = \"(]\"\n\n\nOutput:\n \nfalse\n\n\n\n\nExample 4:\n\n\n\n\nInput:\n \ns = \"([])\"\n\n\nOutput:\n \ntrue\n\n\n\n\nExample 5:\n\n\n\n\nInput:\n \ns = \"([)]\"\n\n\nOutput:\n \nfalse\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 10\n4\n\n\ns\n consists of parentheses only \n'()[]{}'\n.",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "url": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  {
+    "id": "merge-two-sorted-lists",
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "description": "You are given the heads of two sorted linked lists \nlist1\n and \nlist2\n.\n\n\nMerge the two lists into one \nsorted\n list. The list should be made by splicing together the nodes of the first two lists.\n\n\nReturn \nthe head of the merged linked list\n.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n list1 = [1,2,4], list2 = [1,3,4]\n\nOutput:\n [1,1,2,3,4,4]\n\n\n\nExample 2:\n\n\n\n\nInput:\n list1 = [], list2 = []\n\nOutput:\n []\n\n\n\nExample 3:\n\n\n\n\nInput:\n list1 = [], list2 = [0]\n\nOutput:\n [0]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nThe number of nodes in both lists is in the range \n[0, 50]\n.\n\n\n-100 <= Node.val <= 100\n\n\nBoth \nlist1\n and \nlist2\n are sorted in \nnon-decreasing\n order.",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+  },
+  {
+    "id": "generate-parentheses",
+    "title": "Generate Parentheses",
+    "difficulty": "Medium",
+    "description": "Given \nn\n pairs of parentheses, write a function to \ngenerate all combinations of well-formed parentheses\n.\n\n\n \n\n\nExample 1:\n\n\nInput:\n n = 3\n\nOutput:\n [\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\n\nExample 2:\n\n\nInput:\n n = 1\n\nOutput:\n [\"()\"]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 8",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/generate-parentheses/"
+  },
+  {
+    "id": "merge-k-sorted-lists",
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "description": "You are given an array of \nk\n linked-lists \nlists\n, each linked-list is sorted in ascending order.\n\n\nMerge all the linked-lists into one sorted linked-list and return it.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n lists = [[1,4,5],[1,3,4],[2,6]]\n\nOutput:\n [1,1,2,3,4,4,5,6]\n\nExplanation:\n The linked-lists are:\n[\n  1->4->5,\n  1->3->4,\n  2->6\n]\nmerging them into one sorted linked list:\n1->1->2->3->4->4->5->6\n\n\n\nExample 2:\n\n\n\n\nInput:\n lists = []\n\nOutput:\n []\n\n\n\nExample 3:\n\n\n\n\nInput:\n lists = [[]]\n\nOutput:\n []\n\n\n\n \n\n\nConstraints:\n\n\n\n\nk == lists.length\n\n\n0 <= k <= 10\n4\n\n\n0 <= lists[i].length <= 500\n\n\n-10\n4\n <= lists[i][j] <= 10\n4\n\n\nlists[i]\n is sorted in \nascending order\n.\n\n\nThe sum of \nlists[i].length\n will not exceed \n10\n4\n.",
+    "tags": [
+      "Linked List",
+      "Divide and Conquer",
+      "Heap (Priority Queue)",
+      "Merge Sort"
+    ],
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+  },
+  {
+    "id": "swap-nodes-in-pairs",
+    "title": "Swap Nodes in Pairs",
+    "difficulty": "Medium",
+    "description": "Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \nhead = [1,2,3,4]\n\n\nOutput:\n \n[2,1,4,3]\n\n\nExplanation:\n\n\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \nhead = []\n\n\nOutput:\n \n[]\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \nhead = [1]\n\n\nOutput:\n \n[1]\n\n\n\n\nExample 4:\n\n\n\n\nInput:\n \nhead = [1,2,3]\n\n\nOutput:\n \n[2,1,3]\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\nThe number of nodes in the list is in the range \n[0, 100]\n.\n\n\n0 <= Node.val <= 100",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/swap-nodes-in-pairs/"
+  },
+  {
+    "id": "reverse-nodes-in-k-group",
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "Hard",
+    "description": "Given the \nhead\n of a linked list, reverse the nodes of the list \nk\n at a time, and return \nthe modified list\n.\n\n\nk\n is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of \nk\n then left-out nodes, in the end, should remain as it is.\n\n\nYou may not alter the values in the list's nodes, only nodes themselves may be changed.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n head = [1,2,3,4,5], k = 2\n\nOutput:\n [2,1,4,3,5]\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n head = [1,2,3,4,5], k = 3\n\nOutput:\n [3,2,1,4,5]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nThe number of nodes in the list is \nn\n.\n\n\n1 <= k <= n <= 5000\n\n\n0 <= Node.val <= 1000\n\n\n\n\n \n\n\nFollow-up:\n Can you solve the problem in \nO(1)\n extra memory space?",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+  },
+  {
+    "id": "remove-duplicates-from-sorted-array",
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "description": "Given an integer array \nnums\n sorted in \nnon-decreasing order\n, remove the duplicates \nin-place\n such that each unique element appears only \nonce\n. The \nrelative order\n of the elements should be kept the \nsame\n. Then return \nthe number of unique elements in \nnums\n.\n\n\nConsider the number of unique elements of \nnums\n to be \nk\n, to get accepted, you need to do the following things:\n\n\n\n\nChange the array \nnums\n such that the first \nk\n elements of \nnums\n contain the unique elements in the order they were present in \nnums\n initially. The remaining elements of \nnums\n are not important as well as the size of \nnums\n.\n\n\nReturn \nk\n.\n\n\n\n\nCustom Judge:\n\n\nThe judge will test your solution with the following code:\n\n\n\nint[] nums = [...]; // Input array\nint[] expectedNums = [...]; // The expected answer with correct length\n\nint k = removeDuplicates(nums); // Calls your implementation\n\nassert k == expectedNums.length;\nfor (int i = 0; i < k; i++) {\n    assert nums[i] == expectedNums[i];\n}\n\n\n\nIf all assertions pass, then your solution will be \naccepted\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [1,1,2]\n\nOutput:\n 2, nums = [1,2,_]\n\nExplanation:\n Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [0,0,1,1,1,2,2,3,3,4]\n\nOutput:\n 5, nums = [0,1,2,3,4,_,_,_,_,_]\n\nExplanation:\n Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 3 * 10\n4\n\n\n-100 <= nums[i] <= 100\n\n\nnums\n is sorted in \nnon-decreasing\n order.",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+  },
+  {
+    "id": "remove-element",
+    "title": "Remove Element",
+    "difficulty": "Easy",
+    "description": "Given an integer array \nnums\n and an integer \nval\n, remove all occurrences of \nval\n in \nnums\n \nin-place\n. The order of the elements may be changed. Then return \nthe number of elements in \nnums\n which are not equal to \nval\n.\n\n\nConsider the number of elements in \nnums\n which are not equal to \nval\n be \nk\n, to get accepted, you need to do the following things:\n\n\n\n\nChange the array \nnums\n such that the first \nk\n elements of \nnums\n contain the elements which are not equal to \nval\n. The remaining elements of \nnums\n are not important as well as the size of \nnums\n.\n\n\nReturn \nk\n.\n\n\n\n\nCustom Judge:\n\n\nThe judge will test your solution with the following code:\n\n\n\nint[] nums = [...]; // Input array\nint val = ...; // Value to remove\nint[] expectedNums = [...]; // The expected answer with correct length.\n                            // It is sorted with no values equaling val.\n\nint k = removeElement(nums, val); // Calls your implementation\n\nassert k == expectedNums.length;\nsort(nums, 0, k); // Sort the first k elements of nums\nfor (int i = 0; i < actualLength; i++) {\n    assert nums[i] == expectedNums[i];\n}\n\n\n\nIf all assertions pass, then your solution will be \naccepted\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [3,2,2,3], val = 3\n\nOutput:\n 2, nums = [2,2,_,_]\n\nExplanation:\n Your function should return k = 2, with the first two elements of nums being 2.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [0,1,2,2,3,0,4,2], val = 2\n\nOutput:\n 5, nums = [0,1,4,0,3,_,_,_]\n\nExplanation:\n Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.\nNote that the five elements can be returned in any order.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= nums.length <= 100\n\n\n0 <= nums[i] <= 50\n\n\n0 <= val <= 100",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "url": "https://leetcode.com/problems/remove-element/"
+  },
+  {
+    "id": "find-the-index-of-the-first-occurrence-in-a-string",
+    "title": "Find the Index of the First Occurrence in a String",
+    "difficulty": "Easy",
+    "description": "Given two strings \nneedle\n and \nhaystack\n, return the index of the first occurrence of \nneedle\n in \nhaystack\n, or \n-1\n if \nneedle\n is not part of \nhaystack\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n haystack = \"sadbutsad\", needle = \"sad\"\n\nOutput:\n 0\n\nExplanation:\n \"sad\" occurs at index 0 and 6.\nThe first occurrence is at index 0, so we return 0.\n\n\n\nExample 2:\n\n\n\n\nInput:\n haystack = \"leetcode\", needle = \"leeto\"\n\nOutput:\n -1\n\nExplanation:\n \"leeto\" did not occur in \"leetcode\", so we return -1.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= haystack.length, needle.length <= 10\n4\n\n\nhaystack\n and \nneedle\n consist of only lowercase English characters.",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "String Matching"
+    ],
+    "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+  },
+  {
+    "id": "divide-two-integers",
+    "title": "Divide Two Integers",
+    "difficulty": "Medium",
+    "description": "Given two integers \ndividend\n and \ndivisor\n, divide two integers \nwithout\n using multiplication, division, and mod operator.\n\n\nThe integer division should truncate toward zero, which means losing its fractional part. For example, \n8.345\n would be truncated to \n8\n, and \n-2.7335\n would be truncated to \n-2\n.\n\n\nReturn \nthe \nquotient\n after dividing \ndividend\n by \ndivisor\n.\n\n\nNote: \nAssume we are dealing with an environment that could only store integers within the \n32-bit\n signed integer range: \n[−2\n31\n, 2\n31\n − 1]\n. For this problem, if the quotient is \nstrictly greater than\n \n2\n31\n - 1\n, then return \n2\n31\n - 1\n, and if the quotient is \nstrictly less than\n \n-2\n31\n, then return \n-2\n31\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n dividend = 10, divisor = 3\n\nOutput:\n 3\n\nExplanation:\n 10/3 = 3.33333.. which is truncated to 3.\n\n\n\nExample 2:\n\n\n\n\nInput:\n dividend = 7, divisor = -3\n\nOutput:\n -2\n\nExplanation:\n 7/-3 = -2.33333.. which is truncated to -2.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n-2\n31\n <= dividend, divisor <= 2\n31\n - 1\n\n\ndivisor != 0",
+    "tags": [
+      "Math",
+      "Bit Manipulation"
+    ],
+    "url": "https://leetcode.com/problems/divide-two-integers/"
+  },
+  {
+    "id": "substring-with-concatenation-of-all-words",
+    "title": "Substring with Concatenation of All Words",
+    "difficulty": "Hard",
+    "description": "You are given a string \ns\n and an array of strings \nwords\n. All the strings of \nwords\n are of \nthe same length\n.\n\n\nA \nconcatenated string\n is a string that exactly contains all the strings of any permutation of \nwords\n concatenated.\n\n\n\n\nFor example, if \nwords = [\"ab\",\"cd\",\"ef\"]\n, then \n\"abcdef\"\n, \n\"abefcd\"\n, \n\"cdabef\"\n, \n\"cdefab\"\n, \n\"efabcd\"\n, and \n\"efcdab\"\n are all concatenated strings. \n\"acdbef\"\n is not a concatenated string because it is not the concatenation of any permutation of \nwords\n.\n\n\n\n\nReturn an array of \nthe starting indices\n of all the concatenated substrings in \ns\n. You can return the answer in \nany order\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \ns = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]\n\n\nOutput:\n \n[0,9]\n\n\nExplanation:\n\n\nThe substring starting at 0 is \n\"barfoo\"\n. It is the concatenation of \n[\"bar\",\"foo\"]\n which is a permutation of \nwords\n.\n\nThe substring starting at 9 is \n\"foobar\"\n. It is the concatenation of \n[\"foo\",\"bar\"]\n which is a permutation of \nwords\n.\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \ns = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]\n\n\nOutput:\n \n[]\n\n\nExplanation:\n\n\nThere is no concatenated substring.\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \ns = \"barfoofoobarthefoobarman\", words = [\"bar\",\"foo\",\"the\"]\n\n\nOutput:\n \n[6,9,12]\n\n\nExplanation:\n\n\nThe substring starting at 6 is \n\"foobarthe\"\n. It is the concatenation of \n[\"foo\",\"bar\",\"the\"]\n.\n\nThe substring starting at 9 is \n\"barthefoo\"\n. It is the concatenation of \n[\"bar\",\"the\",\"foo\"]\n.\n\nThe substring starting at 12 is \n\"thefoobar\"\n. It is the concatenation of \n[\"the\",\"foo\",\"bar\"]\n.\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 10\n4\n\n\n1 <= words.length <= 5000\n\n\n1 <= words[i].length <= 30\n\n\ns\n and \nwords[i]\n consist of lowercase English letters.",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/"
+  },
+  {
+    "id": "next-permutation",
+    "title": "Next Permutation",
+    "difficulty": "Medium",
+    "description": "A \npermutation\n of an array of integers is an arrangement of its members into a sequence or linear order.\n\n\n\n\nFor example, for \narr = [1,2,3]\n, the following are all the permutations of \narr\n: \n[1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1]\n.\n\n\n\n\nThe \nnext permutation\n of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the \nnext permutation\n of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).\n\n\n\n\nFor example, the next permutation of \narr = [1,2,3]\n is \n[1,3,2]\n.\n\n\nSimilarly, the next permutation of \narr = [2,3,1]\n is \n[3,1,2]\n.\n\n\nWhile the next permutation of \narr = [3,2,1]\n is \n[1,2,3]\n because \n[3,2,1]\n does not have a lexicographical larger rearrangement.\n\n\n\n\nGiven an array of integers \nnums\n, \nfind the next permutation of\n \nnums\n.\n\n\nThe replacement must be \nin place\n and use only constant extra memory.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [1,2,3]\n\nOutput:\n [1,3,2]\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [3,2,1]\n\nOutput:\n [1,2,3]\n\n\n\nExample 3:\n\n\n\n\nInput:\n nums = [1,1,5]\n\nOutput:\n [1,5,1]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 100\n\n\n0 <= nums[i] <= 100",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "url": "https://leetcode.com/problems/next-permutation/"
+  },
+  {
+    "id": "longest-valid-parentheses",
+    "title": "Longest Valid Parentheses",
+    "difficulty": "Hard",
+    "description": "Given a string containing just the characters \n'('\n and \n')'\n, return \nthe length of the longest valid (well-formed) parentheses \nsubstring\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"(()\"\n\nOutput:\n 2\n\nExplanation:\n The longest valid parentheses substring is \"()\".\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \")()())\"\n\nOutput:\n 4\n\nExplanation:\n The longest valid parentheses substring is \"()()\".\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"\"\n\nOutput:\n 0\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= s.length <= 3 * 10\n4\n\n\ns[i]\n is \n'('\n, or \n')'\n.",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack"
+    ],
+    "url": "https://leetcode.com/problems/longest-valid-parentheses/"
+  },
+  {
+    "id": "search-in-rotated-sorted-array",
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "description": "There is an integer array \nnums\n sorted in ascending order (with \ndistinct\n values).\n\n\nPrior to being passed to your function, \nnums\n is \npossibly left rotated\n at an unknown index \nk\n (\n1 <= k < nums.length\n) such that the resulting array is \n[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]\n (\n0-indexed\n). For example, \n[0,1,2,4,5,6,7]\n might be left rotated by \n3\n indices and become \n[4,5,6,7,0,1,2]\n.\n\n\nGiven the array \nnums\n \nafter\n the possible rotation and an integer \ntarget\n, return \nthe index of \ntarget\n if it is in \nnums\n, or \n-1\n if it is not in \nnums\n.\n\n\nYou must write an algorithm with \nO(log n)\n runtime complexity.\n\n\n \n\n\nExample 1:\n\n\nInput:\n nums = [4,5,6,7,0,1,2], target = 0\n\nOutput:\n 4\n\nExample 2:\n\n\nInput:\n nums = [4,5,6,7,0,1,2], target = 3\n\nOutput:\n -1\n\nExample 3:\n\n\nInput:\n nums = [1], target = 0\n\nOutput:\n -1\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 5000\n\n\n-10\n4\n <= nums[i] <= 10\n4\n\n\nAll values of \nnums\n are \nunique\n.\n\n\nnums\n is an ascending array that is possibly rotated.\n\n\n-10\n4\n <= target <= 10\n4",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+  },
+  {
+    "id": "find-first-and-last-position-of-element-in-sorted-array",
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "description": "Given an array of integers \nnums\n sorted in non-decreasing order, find the starting and ending position of a given \ntarget\n value.\n\n\nIf \ntarget\n is not found in the array, return \n[-1, -1]\n.\n\n\nYou must write an algorithm with \nO(log n)\n runtime complexity.\n\n\n \n\n\nExample 1:\n\n\nInput:\n nums = [5,7,7,8,8,10], target = 8\n\nOutput:\n [3,4]\n\nExample 2:\n\n\nInput:\n nums = [5,7,7,8,8,10], target = 6\n\nOutput:\n [-1,-1]\n\nExample 3:\n\n\nInput:\n nums = [], target = 0\n\nOutput:\n [-1,-1]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= nums.length <= 10\n5\n\n\n-10\n9\n <= nums[i] <= 10\n9\n\n\nnums\n is a non-decreasing array.\n\n\n-10\n9\n <= target <= 10\n9",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+  },
+  {
+    "id": "search-insert-position",
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "description": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.\n\n\nYou must write an algorithm with \nO(log n)\n runtime complexity.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [1,3,5,6], target = 5\n\nOutput:\n 2\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [1,3,5,6], target = 2\n\nOutput:\n 1\n\n\n\nExample 3:\n\n\n\n\nInput:\n nums = [1,3,5,6], target = 7\n\nOutput:\n 4\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 10\n4\n\n\n-10\n4\n <= nums[i] <= 10\n4\n\n\nnums\n contains \ndistinct\n values sorted in \nascending\n order.\n\n\n-10\n4\n <= target <= 10\n4",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "url": "https://leetcode.com/problems/search-insert-position/"
+  },
+  {
+    "id": "valid-sudoku",
+    "title": "Valid Sudoku",
+    "difficulty": "Medium",
+    "description": "Determine if a \n9 x 9\n Sudoku board is valid. Only the filled cells need to be validated \naccording to the following rules\n:\n\n\n\n\nEach row must contain the digits \n1-9\n without repetition.\n\n\nEach column must contain the digits \n1-9\n without repetition.\n\n\nEach of the nine \n3 x 3\n sub-boxes of the grid must contain the digits \n1-9\n without repetition.\n\n\n\n\nNote:\n\n\n\n\nA Sudoku board (partially filled) could be valid but is not necessarily solvable.\n\n\nOnly the filled cells need to be validated according to the mentioned rules.\n\n\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n board = \n[[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"]\n,[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"]\n,[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"]\n,[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"]\n,[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"]\n,[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"]\n,[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"]\n,[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"]\n,[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]\n\nOutput:\n true\n\n\n\nExample 2:\n\n\n\n\nInput:\n board = \n[[\"8\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"]\n,[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"]\n,[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"]\n,[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"]\n,[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"]\n,[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"]\n,[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"]\n,[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"]\n,[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]\n\nOutput:\n false\n\nExplanation:\n Same as Example 1, except with the \n5\n in the top left corner being modified to \n8\n. Since there are two 8's in the top left 3x3 sub-box, it is invalid.\n\n\n\n \n\n\nConstraints:\n\n\n\n\nboard.length == 9\n\n\nboard[i].length == 9\n\n\nboard[i][j]\n is a digit \n1-9\n or \n'.'\n.",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/valid-sudoku/"
+  },
+  {
+    "id": "sudoku-solver",
+    "title": "Sudoku Solver",
+    "difficulty": "Hard",
+    "description": "Write a program to solve a Sudoku puzzle by filling the empty cells.\n\n\nA sudoku solution must satisfy \nall of the following rules\n:\n\n\n\n\nEach of the digits \n1-9\n must occur exactly once in each row.\n\n\nEach of the digits \n1-9\n must occur exactly once in each column.\n\n\nEach of the digits \n1-9\n must occur exactly once in each of the 9 \n3x3\n sub-boxes of the grid.\n\n\n\n\nThe \n'.'\n character indicates empty cells.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n board = [[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"],[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"],[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"],[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"],[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"],[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"],[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"],[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"],[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]\n\nOutput:\n [[\"5\",\"3\",\"4\",\"6\",\"7\",\"8\",\"9\",\"1\",\"2\"],[\"6\",\"7\",\"2\",\"1\",\"9\",\"5\",\"3\",\"4\",\"8\"],[\"1\",\"9\",\"8\",\"3\",\"4\",\"2\",\"5\",\"6\",\"7\"],[\"8\",\"5\",\"9\",\"7\",\"6\",\"1\",\"4\",\"2\",\"3\"],[\"4\",\"2\",\"6\",\"8\",\"5\",\"3\",\"7\",\"9\",\"1\"],[\"7\",\"1\",\"3\",\"9\",\"2\",\"4\",\"8\",\"5\",\"6\"],[\"9\",\"6\",\"1\",\"5\",\"3\",\"7\",\"2\",\"8\",\"4\"],[\"2\",\"8\",\"7\",\"4\",\"1\",\"9\",\"6\",\"3\",\"5\"],[\"3\",\"4\",\"5\",\"2\",\"8\",\"6\",\"1\",\"7\",\"9\"]]\n\nExplanation:\n The input board is shown above and the only valid solution is shown below:\n\n\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\nboard.length == 9\n\n\nboard[i].length == 9\n\n\nboard[i][j]\n is a digit or \n'.'\n.\n\n\nIt is \nguaranteed\n that the input board has only one solution.",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Backtracking",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/sudoku-solver/"
+  },
+  {
+    "id": "count-and-say",
+    "title": "Count and Say",
+    "difficulty": "Medium",
+    "description": "The \ncount-and-say\n sequence is a sequence of digit strings defined by the recursive formula:\n\n\n\n\ncountAndSay(1) = \"1\"\n\n\ncountAndSay(n)\n is the run-length encoding of \ncountAndSay(n - 1)\n.\n\n\n\n\nRun-length encoding\n (RLE) is a string compression method that works by replacing consecutive identical characters (repeated 2 or more times) with the concatenation of the character and the number marking the count of the characters (length of the run). For example, to compress the string \n\"3322251\"\n we replace \n\"33\"\n with \n\"23\"\n, replace \n\"222\"\n with \n\"32\"\n, replace \n\"5\"\n with \n\"15\"\n and replace \n\"1\"\n with \n\"11\"\n. Thus the compressed string becomes \n\"23321511\"\n.\n\n\nGiven a positive integer \nn\n, return \nthe \nn\nth\n element of the \ncount-and-say\n sequence\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \nn = 4\n\n\nOutput:\n \n\"1211\"\n\n\nExplanation:\n\n\n\ncountAndSay(1) = \"1\"\ncountAndSay(2) = RLE of \"1\" = \"11\"\ncountAndSay(3) = RLE of \"11\" = \"21\"\ncountAndSay(4) = RLE of \"21\" = \"1211\"\n\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \nn = 1\n\n\nOutput:\n \n\"1\"\n\n\nExplanation:\n\n\nThis is the base case.\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 30\n\n\n\n\n \n\n\nFollow up:\n Could you solve it iteratively?",
+    "tags": [
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/count-and-say/"
+  },
+  {
+    "id": "combination-sum",
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "description": "Given an array of \ndistinct\n integers \ncandidates\n and a target integer \ntarget\n, return \na list of all \nunique combinations\n of \ncandidates\n where the chosen numbers sum to \ntarget\n.\n You may return the combinations in \nany order\n.\n\n\nThe \nsame\n number may be chosen from \ncandidates\n an \nunlimited number of times\n. Two combinations are unique if the \nfrequency\n of at least one of the chosen numbers is different.\n\n\nThe test cases are generated such that the number of unique combinations that sum up to \ntarget\n is less than \n150\n combinations for the given input.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n candidates = [2,3,6,7], target = 7\n\nOutput:\n [[2,2,3],[7]]\n\nExplanation:\n\n2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.\n7 is a candidate, and 7 = 7.\nThese are the only two combinations.\n\n\n\nExample 2:\n\n\n\n\nInput:\n candidates = [2,3,5], target = 8\n\nOutput:\n [[2,2,2,2],[2,3,3],[3,5]]\n\n\n\nExample 3:\n\n\n\n\nInput:\n candidates = [2], target = 1\n\nOutput:\n []\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= candidates.length <= 30\n\n\n2 <= candidates[i] <= 40\n\n\nAll elements of \ncandidates\n are \ndistinct\n.\n\n\n1 <= target <= 40",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/combination-sum/"
+  },
+  {
+    "id": "combination-sum-ii",
+    "title": "Combination Sum II",
+    "difficulty": "Medium",
+    "description": "Given a collection of candidate numbers (\ncandidates\n) and a target number (\ntarget\n), find all unique combinations in \ncandidates\n where the candidate numbers sum to \ntarget\n.\n\n\nEach number in \ncandidates\n may only be used \nonce\n in the combination.\n\n\nNote:\n The solution set must not contain duplicate combinations.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n candidates = [10,1,2,7,6,1,5], target = 8\n\nOutput:\n \n[\n[1,1,6],\n[1,2,5],\n[1,7],\n[2,6]\n]\n\n\n\nExample 2:\n\n\n\n\nInput:\n candidates = [2,5,2,1,2], target = 5\n\nOutput:\n \n[\n[1,2,2],\n[5]\n]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= candidates.length <= 100\n\n\n1 <= candidates[i] <= 50\n\n\n1 <= target <= 30",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/combination-sum-ii/"
+  },
+  {
+    "id": "first-missing-positive",
+    "title": "First Missing Positive",
+    "difficulty": "Hard",
+    "description": "Given an unsorted integer array \nnums\n. Return the \nsmallest positive integer\n that is \nnot present\n in \nnums\n.\n\n\nYou must implement an algorithm that runs in \nO(n)\n time and uses \nO(1)\n auxiliary space.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [1,2,0]\n\nOutput:\n 3\n\nExplanation:\n The numbers in the range [1,2] are all in the array.\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [3,4,-1,1]\n\nOutput:\n 2\n\nExplanation:\n 1 is in the array but 2 is missing.\n\n\n\nExample 3:\n\n\n\n\nInput:\n nums = [7,8,9,11,12]\n\nOutput:\n 1\n\nExplanation:\n The smallest positive integer 1 is missing.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 10\n5\n\n\n-2\n31\n <= nums[i] <= 2\n31\n - 1",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ],
+    "url": "https://leetcode.com/problems/first-missing-positive/"
+  },
+  {
+    "id": "trapping-rain-water",
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "description": "Given \nn\n non-negative integers representing an elevation map where the width of each bar is \n1\n, compute how much water it can trap after raining.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n height = [0,1,0,2,1,0,1,3,2,1,2,1]\n\nOutput:\n 6\n\nExplanation:\n The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.\n\n\n\nExample 2:\n\n\n\n\nInput:\n height = [4,2,0,3,2,5]\n\nOutput:\n 9\n\n\n\n \n\n\nConstraints:\n\n\n\n\nn == height.length\n\n\n1 <= n <= 2 * 10\n4\n\n\n0 <= height[i] <= 10\n5",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Dynamic Programming",
+      "Stack",
+      "Monotonic Stack"
+    ],
+    "url": "https://leetcode.com/problems/trapping-rain-water/"
+  },
+  {
+    "id": "multiply-strings",
+    "title": "Multiply Strings",
+    "difficulty": "Medium",
+    "description": "Given two non-negative integers \nnum1\n and \nnum2\n represented as strings, return the product of \nnum1\n and \nnum2\n, also represented as a string.\n\n\nNote:\n You must not use any built-in BigInteger library or convert the inputs to integer directly.\n\n\n \n\n\nExample 1:\n\n\nInput:\n num1 = \"2\", num2 = \"3\"\n\nOutput:\n \"6\"\n\nExample 2:\n\n\nInput:\n num1 = \"123\", num2 = \"456\"\n\nOutput:\n \"56088\"\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= num1.length, num2.length <= 200\n\n\nnum1\n and \nnum2\n consist of digits only.\n\n\nBoth \nnum1\n and \nnum2\n do not contain any leading zero, except the number \n0\n itself.",
+    "tags": [
+      "Math",
+      "String",
+      "Simulation"
+    ],
+    "url": "https://leetcode.com/problems/multiply-strings/"
+  },
+  {
+    "id": "wildcard-matching",
+    "title": "Wildcard Matching",
+    "difficulty": "Hard",
+    "description": "Given an input string (\ns\n) and a pattern (\np\n), implement wildcard pattern matching with support for \n'?'\n and \n'*'\n where:\n\n\n\n\n'?'\n Matches any single character.\n\n\n'*'\n Matches any sequence of characters (including the empty sequence).\n\n\n\n\nThe matching should cover the \nentire\n input string (not partial).\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"aa\", p = \"a\"\n\nOutput:\n false\n\nExplanation:\n \"a\" does not match the entire string \"aa\".\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"aa\", p = \"*\"\n\nOutput:\n true\n\nExplanation:\n '*' matches any sequence.\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"cb\", p = \"?a\"\n\nOutput:\n false\n\nExplanation:\n '?' matches 'c', but the second letter is 'a', which does not match 'b'.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= s.length, p.length <= 2000\n\n\ns\n contains only lowercase English letters.\n\n\np\n contains only lowercase English letters, \n'?'\n or \n'*'\n.",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Greedy",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/wildcard-matching/"
+  },
+  {
+    "id": "jump-game-ii",
+    "title": "Jump Game II",
+    "difficulty": "Medium",
+    "description": "You are given a \n0-indexed\n array of integers \nnums\n of length \nn\n. You are initially positioned at index 0.\n\n\nEach element \nnums[i]\n represents the maximum length of a forward jump from index \ni\n. In other words, if you are at index \ni\n, you can jump to any index \n(i + j)\n where:\n\n\n\n\n0 <= j <= nums[i]\n and\n\n\ni + j < n\n\n\n\n\nReturn \nthe minimum number of jumps to reach index \nn - 1\n. The test cases are generated such that you can reach index \nn - 1\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [2,3,1,1,4]\n\nOutput:\n 2\n\nExplanation:\n The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [2,3,0,1,4]\n\nOutput:\n 2\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 10\n4\n\n\n0 <= nums[i] <= 1000\n\n\nIt's guaranteed that you can reach \nnums[n - 1]\n.",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "url": "https://leetcode.com/problems/jump-game-ii/"
+  },
+  {
+    "id": "permutations",
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "description": "Given an array \nnums\n of distinct integers, return all the possible \npermutations\n. You can return the answer in \nany order\n.\n\n\n \n\n\nExample 1:\n\n\nInput:\n nums = [1,2,3]\n\nOutput:\n [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]\n\nExample 2:\n\n\nInput:\n nums = [0,1]\n\nOutput:\n [[0,1],[1,0]]\n\nExample 3:\n\n\nInput:\n nums = [1]\n\nOutput:\n [[1]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 6\n\n\n-10 <= nums[i] <= 10\n\n\nAll the integers of \nnums\n are \nunique\n.",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/permutations/"
+  },
+  {
+    "id": "permutations-ii",
+    "title": "Permutations II",
+    "difficulty": "Medium",
+    "description": "Given a collection of numbers, \nnums\n, that might contain duplicates, return \nall possible unique permutations \nin any order\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [1,1,2]\n\nOutput:\n\n[[1,1,2],\n [1,2,1],\n [2,1,1]]\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [1,2,3]\n\nOutput:\n [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 8\n\n\n-10 <= nums[i] <= 10",
+    "tags": [
+      "Array",
+      "Backtracking",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/permutations-ii/"
+  },
+  {
+    "id": "rotate-image",
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "description": "You are given an \nn x n\n 2D \nmatrix\n representing an image, rotate the image by \n90\n degrees (clockwise).\n\n\nYou have to rotate the image \nin-place\n, which means you have to modify the input 2D matrix directly. \nDO NOT\n allocate another 2D matrix and do the rotation.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n matrix = [[1,2,3],[4,5,6],[7,8,9]]\n\nOutput:\n [[7,4,1],[8,5,2],[9,6,3]]\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]\n\nOutput:\n [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nn == matrix.length == matrix[i].length\n\n\n1 <= n <= 20\n\n\n-1000 <= matrix[i][j] <= 1000",
+    "tags": [
+      "Array",
+      "Math",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/rotate-image/"
+  },
+  {
+    "id": "group-anagrams",
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "description": "Given an array of strings \nstrs\n, group the \nanagrams\n together. You can return the answer in \nany order\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \nstrs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\n\nOutput:\n \n[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]\n\n\nExplanation:\n\n\n\n\nThere is no string in strs that can be rearranged to form \n\"bat\"\n.\n\n\nThe strings \n\"nat\"\n and \n\"tan\"\n are anagrams as they can be rearranged to form each other.\n\n\nThe strings \n\"ate\"\n, \n\"eat\"\n, and \n\"tea\"\n are anagrams as they can be rearranged to form each other.\n\n\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \nstrs = [\"\"]\n\n\nOutput:\n \n[[\"\"]]\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \nstrs = [\"a\"]\n\n\nOutput:\n \n[[\"a\"]]\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= strs.length <= 10\n4\n\n\n0 <= strs[i].length <= 100\n\n\nstrs[i]\n consists of lowercase English letters.",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "String",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/group-anagrams/"
+  },
+  {
+    "id": "powx-n",
+    "title": "Pow(x, n)",
+    "difficulty": "Medium",
+    "description": "Implement \npow(x, n)\n, which calculates \nx\n raised to the power \nn\n (i.e., \nx\nn\n).\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n x = 2.00000, n = 10\n\nOutput:\n 1024.00000\n\n\n\nExample 2:\n\n\n\n\nInput:\n x = 2.10000, n = 3\n\nOutput:\n 9.26100\n\n\n\nExample 3:\n\n\n\n\nInput:\n x = 2.00000, n = -2\n\nOutput:\n 0.25000\n\nExplanation:\n 2\n-2\n = 1/2\n2\n = 1/4 = 0.25\n\n\n\n \n\n\nConstraints:\n\n\n\n\n-100.0 < x < 100.0\n\n\n-2\n31\n <= n <= 2\n31\n-1\n\n\nn\n is an integer.\n\n\nEither \nx\n is not zero or \nn > 0\n.\n\n\n-10\n4\n <= x\nn\n <= 10\n4",
+    "tags": [
+      "Math",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/powx-n/"
+  },
+  {
+    "id": "n-queens",
+    "title": "N-Queens",
+    "difficulty": "Hard",
+    "description": "The \nn-queens\n puzzle is the problem of placing \nn\n queens on an \nn x n\n chessboard such that no two queens attack each other.\n\n\nGiven an integer \nn\n, return \nall distinct solutions to the \nn-queens puzzle\n. You may return the answer in \nany order\n.\n\n\nEach solution contains a distinct board configuration of the n-queens' placement, where \n'Q'\n and \n'.'\n both indicate a queen and an empty space, respectively.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n n = 4\n\nOutput:\n [[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]\n\nExplanation:\n There exist two distinct solutions to the 4-queens puzzle as shown above\n\n\n\nExample 2:\n\n\n\n\nInput:\n n = 1\n\nOutput:\n [[\"Q\"]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 9",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/n-queens/"
+  },
+  {
+    "id": "n-queens-ii",
+    "title": "N-Queens II",
+    "difficulty": "Hard",
+    "description": "The \nn-queens\n puzzle is the problem of placing \nn\n queens on an \nn x n\n chessboard such that no two queens attack each other.\n\n\nGiven an integer \nn\n, return \nthe number of distinct solutions to the \nn-queens puzzle\n.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n n = 4\n\nOutput:\n 2\n\nExplanation:\n There are two distinct solutions to the 4-queens puzzle as shown.\n\n\n\nExample 2:\n\n\n\n\nInput:\n n = 1\n\nOutput:\n 1\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 9",
+    "tags": [
+      "Backtracking"
+    ],
+    "url": "https://leetcode.com/problems/n-queens-ii/"
+  },
+  {
+    "id": "maximum-subarray",
+    "title": "Maximum Subarray",
+    "difficulty": "Medium",
+    "description": "Given an integer array \nnums\n, find the \nsubarray\n with the largest sum, and return \nits sum\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [-2,1,-3,4,-1,2,1,-5,4]\n\nOutput:\n 6\n\nExplanation:\n The subarray [4,-1,2,1] has the largest sum 6.\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [1]\n\nOutput:\n 1\n\nExplanation:\n The subarray [1] has the largest sum 1.\n\n\n\nExample 3:\n\n\n\n\nInput:\n nums = [5,4,-1,7,8]\n\nOutput:\n 23\n\nExplanation:\n The subarray [5,4,-1,7,8] has the largest sum 23.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 10\n5\n\n\n-10\n4\n <= nums[i] <= 10\n4\n\n\n\n\n \n\n\nFollow up:\n If you have figured out the \nO(n)\n solution, try coding another solution using the \ndivide and conquer\n approach, which is more subtle.",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Dynamic Programming"
+    ],
+    "url": "https://leetcode.com/problems/maximum-subarray/"
+  },
+  {
+    "id": "spiral-matrix",
+    "title": "Spiral Matrix",
+    "difficulty": "Medium",
+    "description": "Given an \nm x n\n \nmatrix\n, return \nall elements of the\n \nmatrix\n \nin spiral order\n.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n matrix = [[1,2,3],[4,5,6],[7,8,9]]\n\nOutput:\n [1,2,3,6,9,8,7,4,5]\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]\n\nOutput:\n [1,2,3,4,8,12,11,10,9,5,6,7]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nm == matrix.length\n\n\nn == matrix[i].length\n\n\n1 <= m, n <= 10\n\n\n-100 <= matrix[i][j] <= 100",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "url": "https://leetcode.com/problems/spiral-matrix/"
+  },
+  {
+    "id": "jump-game",
+    "title": "Jump Game",
+    "difficulty": "Medium",
+    "description": "You are given an integer array \nnums\n. You are initially positioned at the array's \nfirst index\n, and each element in the array represents your maximum jump length at that position.\n\n\nReturn \ntrue\n if you can reach the last index, or \nfalse\n otherwise\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [2,3,1,1,4]\n\nOutput:\n true\n\nExplanation:\n Jump 1 step from index 0 to 1, then 3 steps to the last index.\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [3,2,1,0,4]\n\nOutput:\n false\n\nExplanation:\n You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= nums.length <= 10\n4\n\n\n0 <= nums[i] <= 10\n5",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "url": "https://leetcode.com/problems/jump-game/"
+  },
+  {
+    "id": "merge-intervals",
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "description": "Given an array of \nintervals\n where \nintervals[i] = [start\ni\n, end\ni\n]\n, merge all overlapping intervals, and return \nan array of the non-overlapping intervals that cover all the intervals in the input\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n intervals = [[1,3],[2,6],[8,10],[15,18]]\n\nOutput:\n [[1,6],[8,10],[15,18]]\n\nExplanation:\n Since intervals [1,3] and [2,6] overlap, merge them into [1,6].\n\n\n\nExample 2:\n\n\n\n\nInput:\n intervals = [[1,4],[4,5]]\n\nOutput:\n [[1,5]]\n\nExplanation:\n Intervals [1,4] and [4,5] are considered overlapping.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= intervals.length <= 10\n4\n\n\nintervals[i].length == 2\n\n\n0 <= start\ni\n <= end\ni\n <= 10\n4",
+    "tags": [
+      "Array",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/merge-intervals/"
+  },
+  {
+    "id": "insert-interval",
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "description": "You are given an array of non-overlapping intervals \nintervals\n where \nintervals[i] = [start\ni\n, end\ni\n]\n represent the start and the end of the \ni\nth\n interval and \nintervals\n is sorted in ascending order by \nstart\ni\n. You are also given an interval \nnewInterval = [start, end]\n that represents the start and end of another interval.\n\n\nInsert \nnewInterval\n into \nintervals\n such that \nintervals\n is still sorted in ascending order by \nstart\ni\n and \nintervals\n still does not have any overlapping intervals (merge overlapping intervals if necessary).\n\n\nReturn \nintervals\n after the insertion\n.\n\n\nNote\n that you don't need to modify \nintervals\n in-place. You can make a new array and return it.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n intervals = [[1,3],[6,9]], newInterval = [2,5]\n\nOutput:\n [[1,5],[6,9]]\n\n\n\nExample 2:\n\n\n\n\nInput:\n intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]\n\nOutput:\n [[1,2],[3,10],[12,16]]\n\nExplanation:\n Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= intervals.length <= 10\n4\n\n\nintervals[i].length == 2\n\n\n0 <= start\ni\n <= end\ni\n <= 10\n5\n\n\nintervals\n is sorted by \nstart\ni\n in \nascending\n order.\n\n\nnewInterval.length == 2\n\n\n0 <= start <= end <= 10\n5",
+    "tags": [
+      "Array"
+    ],
+    "url": "https://leetcode.com/problems/insert-interval/"
+  },
+  {
+    "id": "length-of-last-word",
+    "title": "Length of Last Word",
+    "difficulty": "Easy",
+    "description": "Given a string \ns\n consisting of words and spaces, return \nthe length of the \nlast\n word in the string.\n\n\nA \nword\n is a maximal \nsubstring\n consisting of non-space characters only.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n s = \"Hello World\"\n\nOutput:\n 5\n\nExplanation:\n The last word is \"World\" with length 5.\n\n\n\nExample 2:\n\n\n\n\nInput:\n s = \"   fly me   to   the moon  \"\n\nOutput:\n 4\n\nExplanation:\n The last word is \"moon\" with length 4.\n\n\n\nExample 3:\n\n\n\n\nInput:\n s = \"luffy is still joyboy\"\n\nOutput:\n 6\n\nExplanation:\n The last word is \"joyboy\" with length 6.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 10\n4\n\n\ns\n consists of only English letters and spaces \n' '\n.\n\n\nThere will be at least one word in \ns\n.",
+    "tags": [
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/length-of-last-word/"
+  },
+  {
+    "id": "spiral-matrix-ii",
+    "title": "Spiral Matrix II",
+    "difficulty": "Medium",
+    "description": "Given a positive integer \nn\n, generate an \nn x n\n \nmatrix\n filled with elements from \n1\n to \nn\n2\n in spiral order.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n n = 3\n\nOutput:\n [[1,2,3],[8,9,4],[7,6,5]]\n\n\n\nExample 2:\n\n\n\n\nInput:\n n = 1\n\nOutput:\n [[1]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 20",
+    "tags": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "url": "https://leetcode.com/problems/spiral-matrix-ii/"
+  },
+  {
+    "id": "permutation-sequence",
+    "title": "Permutation Sequence",
+    "difficulty": "Hard",
+    "description": "The set \n[1, 2, 3, ..., n]\n contains a total of \nn!\n unique permutations.\n\n\nBy listing and labeling all of the permutations in order, we get the following sequence for \nn = 3\n:\n\n\n\n\n\"123\"\n\n\n\"132\"\n\n\n\"213\"\n\n\n\"231\"\n\n\n\"312\"\n\n\n\"321\"\n\n\n\n\nGiven \nn\n and \nk\n, return the \nk\nth\n permutation sequence.\n\n\n \n\n\nExample 1:\n\n\nInput:\n n = 3, k = 3\n\nOutput:\n \"213\"\n\nExample 2:\n\n\nInput:\n n = 4, k = 9\n\nOutput:\n \"2314\"\n\nExample 3:\n\n\nInput:\n n = 3, k = 1\n\nOutput:\n \"123\"\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 9\n\n\n1 <= k <= n!",
+    "tags": [
+      "Math",
+      "Recursion"
+    ],
+    "url": "https://leetcode.com/problems/permutation-sequence/"
+  },
+  {
+    "id": "rotate-list",
+    "title": "Rotate List",
+    "difficulty": "Medium",
+    "description": "Given the \nhead\n of a linked list, rotate the list to the right by \nk\n places.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n head = [1,2,3,4,5], k = 2\n\nOutput:\n [4,5,1,2,3]\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n head = [0,1,2], k = 4\n\nOutput:\n [2,0,1]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nThe number of nodes in the list is in the range \n[0, 500]\n.\n\n\n-100 <= Node.val <= 100\n\n\n0 <= k <= 2 * 10\n9",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "url": "https://leetcode.com/problems/rotate-list/"
+  },
+  {
+    "id": "unique-paths",
+    "title": "Unique Paths",
+    "difficulty": "Medium",
+    "description": "There is a robot on an \nm x n\n grid. The robot is initially located at the \ntop-left corner\n (i.e., \ngrid[0][0]\n). The robot tries to move to the \nbottom-right corner\n (i.e., \ngrid[m - 1][n - 1]\n). The robot can only move either down or right at any point in time.\n\n\nGiven the two integers \nm\n and \nn\n, return \nthe number of possible unique paths that the robot can take to reach the bottom-right corner\n.\n\n\nThe test cases are generated so that the answer will be less than or equal to \n2 * 10\n9\n.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n m = 3, n = 7\n\nOutput:\n 28\n\n\n\nExample 2:\n\n\n\n\nInput:\n m = 3, n = 2\n\nOutput:\n 3\n\nExplanation:\n From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -> Down -> Down\n2. Down -> Down -> Right\n3. Down -> Right -> Down\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= m, n <= 100",
+    "tags": [
+      "Math",
+      "Dynamic Programming",
+      "Combinatorics"
+    ],
+    "url": "https://leetcode.com/problems/unique-paths/"
+  },
+  {
+    "id": "unique-paths-ii",
+    "title": "Unique Paths II",
+    "difficulty": "Medium",
+    "description": "You are given an \nm x n\n integer array \ngrid\n. There is a robot initially located at the \ntop-left corner\n (i.e., \ngrid[0][0]\n). The robot tries to move to the \nbottom-right corner\n (i.e., \ngrid[m - 1][n - 1]\n). The robot can only move either down or right at any point in time.\n\n\nAn obstacle and space are marked as \n1\n or \n0\n respectively in \ngrid\n. A path that the robot takes cannot include \nany\n square that is an obstacle.\n\n\nReturn \nthe number of possible unique paths that the robot can take to reach the bottom-right corner\n.\n\n\nThe testcases are generated so that the answer will be less than or equal to \n2 * 10\n9\n.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]\n\nOutput:\n 2\n\nExplanation:\n There is one obstacle in the middle of the 3x3 grid above.\nThere are two ways to reach the bottom-right corner:\n1. Right -> Right -> Down -> Down\n2. Down -> Down -> Right -> Right\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n obstacleGrid = [[0,1],[0,0]]\n\nOutput:\n 1\n\n\n\n \n\n\nConstraints:\n\n\n\n\nm == obstacleGrid.length\n\n\nn == obstacleGrid[i].length\n\n\n1 <= m, n <= 100\n\n\nobstacleGrid[i][j]\n is \n0\n or \n1\n.",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/unique-paths-ii/"
+  },
+  {
+    "id": "minimum-path-sum",
+    "title": "Minimum Path Sum",
+    "difficulty": "Medium",
+    "description": "Given a \nm x n\n \ngrid\n filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.\n\n\nNote:\n You can only move either down or right at any point in time.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n grid = [[1,3,1],[1,5,1],[4,2,1]]\n\nOutput:\n 7\n\nExplanation:\n Because the path 1 → 3 → 1 → 1 → 1 minimizes the sum.\n\n\n\nExample 2:\n\n\n\n\nInput:\n grid = [[1,2,3],[4,5,6]]\n\nOutput:\n 12\n\n\n\n \n\n\nConstraints:\n\n\n\n\nm == grid.length\n\n\nn == grid[i].length\n\n\n1 <= m, n <= 200\n\n\n0 <= grid[i][j] <= 200",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/minimum-path-sum/"
+  },
+  {
+    "id": "valid-number",
+    "title": "Valid Number",
+    "difficulty": "Hard",
+    "description": "Given a string \ns\n, return whether \ns\n is a \nvalid number\n.\n\n\n\nFor example, all the following are valid numbers: \n\"2\", \"0089\", \"-0.1\", \"+3.14\", \"4.\", \"-.9\", \"2e10\", \"-90E3\", \"3e+7\", \"+6e-1\", \"53.5e93\", \"-123.456e789\"\n, while the following are not valid numbers: \n\"abc\", \"1a\", \"1e\", \"e3\", \"99e2.5\", \"--6\", \"-+3\", \"95a54e53\"\n.\n\n\nFormally, a \nvalid number\n is defined using one of the following definitions:\n\n\n\n\nAn \ninteger number\n followed by an \noptional exponent\n.\n\n\nA \ndecimal number\n followed by an \noptional exponent\n.\n\n\n\n\nAn \ninteger number\n is defined with an \noptional sign\n \n'-'\n or \n'+'\n followed by \ndigits\n.\n\n\nA \ndecimal number\n is defined with an \noptional sign\n \n'-'\n or \n'+'\n followed by one of the following definitions:\n\n\n\n\nDigits\n followed by a \ndot\n \n'.'\n.\n\n\nDigits\n followed by a \ndot\n \n'.'\n followed by \ndigits\n.\n\n\nA \ndot\n \n'.'\n followed by \ndigits\n.\n\n\n\n\nAn \nexponent\n is defined with an \nexponent notation\n \n'e'\n or \n'E'\n followed by an \ninteger number\n.\n\n\nThe \ndigits\n are defined as one or more digits.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \ns = \"0\"\n\n\nOutput:\n \ntrue\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \ns = \"e\"\n\n\nOutput:\n \nfalse\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \ns = \".\"\n\n\nOutput:\n \nfalse\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= s.length <= 20\n\n\ns\n consists of only English letters (both uppercase and lowercase), digits (\n0-9\n), plus \n'+'\n, minus \n'-'\n, or dot \n'.'\n.",
+    "tags": [
+      "String"
+    ],
+    "url": "https://leetcode.com/problems/valid-number/"
+  },
+  {
+    "id": "plus-one",
+    "title": "Plus One",
+    "difficulty": "Easy",
+    "description": "You are given a \nlarge integer\n represented as an integer array \ndigits\n, where each \ndigits[i]\n is the \ni\nth\n digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading \n0\n's.\n\n\nIncrement the large integer by one and return \nthe resulting array of digits\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n digits = [1,2,3]\n\nOutput:\n [1,2,4]\n\nExplanation:\n The array represents the integer 123.\nIncrementing by one gives 123 + 1 = 124.\nThus, the result should be [1,2,4].\n\n\n\nExample 2:\n\n\n\n\nInput:\n digits = [4,3,2,1]\n\nOutput:\n [4,3,2,2]\n\nExplanation:\n The array represents the integer 4321.\nIncrementing by one gives 4321 + 1 = 4322.\nThus, the result should be [4,3,2,2].\n\n\n\nExample 3:\n\n\n\n\nInput:\n digits = [9]\n\nOutput:\n [1,0]\n\nExplanation:\n The array represents the integer 9.\nIncrementing by one gives 9 + 1 = 10.\nThus, the result should be [1,0].\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= digits.length <= 100\n\n\n0 <= digits[i] <= 9\n\n\ndigits\n does not contain any leading \n0\n's.",
+    "tags": [
+      "Array",
+      "Math"
+    ],
+    "url": "https://leetcode.com/problems/plus-one/"
+  },
+  {
+    "id": "add-binary",
+    "title": "Add Binary",
+    "difficulty": "Easy",
+    "description": "Given two binary strings \na\n and \nb\n, return \ntheir sum as a binary string\n.\n\n\n \n\n\nExample 1:\n\n\nInput:\n a = \"11\", b = \"1\"\n\nOutput:\n \"100\"\n\nExample 2:\n\n\nInput:\n a = \"1010\", b = \"1011\"\n\nOutput:\n \"10101\"\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= a.length, b.length <= 10\n4\n\n\na\n and \nb\n consist only of \n'0'\n or \n'1'\n characters.\n\n\nEach string does not contain leading zeros except for the zero itself.",
+    "tags": [
+      "Math",
+      "String",
+      "Bit Manipulation",
+      "Simulation"
+    ],
+    "url": "https://leetcode.com/problems/add-binary/"
+  },
+  {
+    "id": "text-justification",
+    "title": "Text Justification",
+    "difficulty": "Hard",
+    "description": "Given an array of strings \nwords\n and a width \nmaxWidth\n, format the text such that each line has exactly \nmaxWidth\n characters and is fully (left and right) justified.\n\n\nYou should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces \n' '\n when necessary so that each line has exactly \nmaxWidth\n characters.\n\n\nExtra spaces between words should be distributed as evenly as possible. If the number of spaces on a line does not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.\n\n\nFor the last line of text, it should be left-justified, and no extra space is inserted between words.\n\n\nNote:\n\n\n\n\nA word is defined as a character sequence consisting of non-space characters only.\n\n\nEach word's length is guaranteed to be greater than \n0\n and not exceed \nmaxWidth\n.\n\n\nThe input array \nwords\n contains at least one word.\n\n\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n words = [\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"], maxWidth = 16\n\nOutput:\n\n[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]\n\n\nExample 2:\n\n\n\n\nInput:\n words = [\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"], maxWidth = 16\n\nOutput:\n\n[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]\n\nExplanation:\n Note that the last line is \"shall be    \" instead of \"shall     be\", because the last line must be left-justified instead of fully-justified.\nNote that the second line is also left-justified because it contains only one word.\n\n\nExample 3:\n\n\n\n\nInput:\n words = [\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"], maxWidth = 20\n\nOutput:\n\n[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= words.length <= 300\n\n\n1 <= words[i].length <= 20\n\n\nwords[i]\n consists of only English letters and symbols.\n\n\n1 <= maxWidth <= 100\n\n\nwords[i].length <= maxWidth",
+    "tags": [
+      "Array",
+      "String",
+      "Simulation"
+    ],
+    "url": "https://leetcode.com/problems/text-justification/"
+  },
+  {
+    "id": "sqrtx",
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "description": "Given a non-negative integer \nx\n, return \nthe square root of \nx\n rounded down to the nearest integer\n. The returned integer should be \nnon-negative\n as well.\n\n\nYou \nmust not use\n any built-in exponent function or operator.\n\n\n\n\nFor example, do not use \npow(x, 0.5)\n in c++ or \nx ** 0.5\n in python.\n\n\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n x = 4\n\nOutput:\n 2\n\nExplanation:\n The square root of 4 is 2, so we return 2.\n\n\n\nExample 2:\n\n\n\n\nInput:\n x = 8\n\nOutput:\n 2\n\nExplanation:\n The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= x <= 2\n31\n - 1",
+    "tags": [
+      "Math",
+      "Binary Search"
+    ],
+    "url": "https://leetcode.com/problems/sqrtx/"
+  },
+  {
+    "id": "climbing-stairs",
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "description": "You are climbing a staircase. It takes \nn\n steps to reach the top.\n\n\nEach time you can either climb \n1\n or \n2\n steps. In how many distinct ways can you climb to the top?\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n n = 2\n\nOutput:\n 2\n\nExplanation:\n There are two ways to climb to the top.\n1. 1 step + 1 step\n2. 2 steps\n\n\n\nExample 2:\n\n\n\n\nInput:\n n = 3\n\nOutput:\n 3\n\nExplanation:\n There are three ways to climb to the top.\n1. 1 step + 1 step + 1 step\n2. 1 step + 2 steps\n3. 2 steps + 1 step\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= n <= 45",
+    "tags": [
+      "Math",
+      "Dynamic Programming",
+      "Memoization"
+    ],
+    "url": "https://leetcode.com/problems/climbing-stairs/"
+  },
+  {
+    "id": "simplify-path",
+    "title": "Simplify Path",
+    "difficulty": "Medium",
+    "description": "You are given an \nabsolute\n path for a Unix-style file system, which always begins with a slash \n'/'\n. Your task is to transform this absolute path into its \nsimplified canonical path\n.\n\n\nThe \nrules\n of a Unix-style file system are as follows:\n\n\n\n\nA single period \n'.'\n represents the current directory.\n\n\nA double period \n'..'\n represents the previous/parent directory.\n\n\nMultiple consecutive slashes such as \n'//'\n and \n'///'\n are treated as a single slash \n'/'\n.\n\n\nAny sequence of periods that does \nnot match\n the rules above should be treated as a \nvalid directory or\n \nfile \nname\n. For example, \n'...' \nand \n'....'\n are valid directory or file names.\n\n\n\n\nThe simplified canonical path should follow these \nrules\n:\n\n\n\n\nThe path must start with a single slash \n'/'\n.\n\n\nDirectories within the path must be separated by exactly one slash \n'/'\n.\n\n\nThe path must not end with a slash \n'/'\n, unless it is the root directory.\n\n\nThe path must not have any single or double periods (\n'.'\n and \n'..'\n) used to denote current or parent directories.\n\n\n\n\nReturn the \nsimplified canonical path\n.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n \npath = \"/home/\"\n\n\nOutput:\n \n\"/home\"\n\n\nExplanation:\n\n\nThe trailing slash should be removed.\n\n\n\n\nExample 2:\n\n\n\n\nInput:\n \npath = \"/home//foo/\"\n\n\nOutput:\n \n\"/home/foo\"\n\n\nExplanation:\n\n\nMultiple consecutive slashes are replaced by a single one.\n\n\n\n\nExample 3:\n\n\n\n\nInput:\n \npath = \"/home/user/Documents/../Pictures\"\n\n\nOutput:\n \n\"/home/user/Pictures\"\n\n\nExplanation:\n\n\nA double period \n\"..\"\n refers to the directory up a level (the parent directory).\n\n\n\n\nExample 4:\n\n\n\n\nInput:\n \npath = \"/../\"\n\n\nOutput:\n \n\"/\"\n\n\nExplanation:\n\n\nGoing one level up from the root directory is not possible.\n\n\n\n\nExample 5:\n\n\n\n\nInput:\n \npath = \"/.../a/../b/c/../d/./\"\n\n\nOutput:\n \n\"/.../b/d\"\n\n\nExplanation:\n\n\n\"...\"\n is a valid name for a directory in this problem.\n\n\n\n\n \n\n\nConstraints:\n\n\n\n\n1 <= path.length <= 3000\n\n\npath\n consists of English letters, digits, period \n'.'\n, slash \n'/'\n or \n'_'\n.\n\n\npath\n is a valid absolute Unix path.",
+    "tags": [
+      "String",
+      "Stack"
+    ],
+    "url": "https://leetcode.com/problems/simplify-path/"
+  },
+  {
+    "id": "edit-distance",
+    "title": "Edit Distance",
+    "difficulty": "Medium",
+    "description": "Given two strings \nword1\n and \nword2\n, return \nthe minimum number of operations required to convert \nword1\n to \nword2\n.\n\n\nYou have the following three operations permitted on a word:\n\n\n\n\nInsert a character\n\n\nDelete a character\n\n\nReplace a character\n\n\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n word1 = \"horse\", word2 = \"ros\"\n\nOutput:\n 3\n\nExplanation:\n \nhorse -> rorse (replace 'h' with 'r')\nrorse -> rose (remove 'r')\nrose -> ros (remove 'e')\n\n\n\nExample 2:\n\n\n\n\nInput:\n word1 = \"intention\", word2 = \"execution\"\n\nOutput:\n 5\n\nExplanation:\n \nintention -> inention (remove 't')\ninention -> enention (replace 'i' with 'e')\nenention -> exention (replace 'n' with 'x')\nexention -> exection (replace 'n' with 'c')\nexection -> execution (insert 'u')\n\n\n\n \n\n\nConstraints:\n\n\n\n\n0 <= word1.length, word2.length <= 500\n\n\nword1\n and \nword2\n consist of lowercase English letters.",
+    "tags": [
+      "String",
+      "Dynamic Programming"
+    ],
+    "url": "https://leetcode.com/problems/edit-distance/"
+  },
+  {
+    "id": "set-matrix-zeroes",
+    "title": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "description": "Given an \nm x n\n integer matrix \nmatrix\n, if an element is \n0\n, set its entire row and column to \n0\n's.\n\n\nYou must do it \nin place\n.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n matrix = [[1,1,1],[1,0,1],[1,1,1]]\n\nOutput:\n [[1,0,1],[0,0,0],[1,0,1]]\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]\n\nOutput:\n [[0,0,0,0],[0,4,5,0],[0,3,1,0]]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nm == matrix.length\n\n\nn == matrix[0].length\n\n\n1 <= m, n <= 200\n\n\n-2\n31\n <= matrix[i][j] <= 2\n31\n - 1\n\n\n\n\n \n\n\nFollow up:\n\n\n\n\nA straightforward solution using \nO(mn)\n space is probably a bad idea.\n\n\nA simple improvement uses \nO(m + n)\n space, but still not the best solution.\n\n\nCould you devise a constant space solution?",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/set-matrix-zeroes/"
+  },
+  {
+    "id": "search-a-2d-matrix",
+    "title": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "description": "You are given an \nm x n\n integer matrix \nmatrix\n with the following two properties:\n\n\n\n\nEach row is sorted in non-decreasing order.\n\n\nThe first integer of each row is greater than the last integer of the previous row.\n\n\n\n\nGiven an integer \ntarget\n, return \ntrue\n \nif\n \ntarget\n \nis in\n \nmatrix\n \nor\n \nfalse\n \notherwise\n.\n\n\nYou must write a solution in \nO(log(m * n))\n time complexity.\n\n\n \n\n\nExample 1:\n\n\n\n\n\n\nInput:\n matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3\n\nOutput:\n true\n\n\n\nExample 2:\n\n\n\n\n\n\nInput:\n matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13\n\nOutput:\n false\n\n\n\n \n\n\nConstraints:\n\n\n\n\nm == matrix.length\n\n\nn == matrix[i].length\n\n\n1 <= m, n <= 100\n\n\n-10\n4\n <= matrix[i][j], target <= 10\n4",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Matrix"
+    ],
+    "url": "https://leetcode.com/problems/search-a-2d-matrix/"
+  },
+  {
+    "id": "sort-colors",
+    "title": "Sort Colors",
+    "difficulty": "Medium",
+    "description": "Given an array \nnums\n with \nn\n objects colored red, white, or blue, sort them \nin-place\n \nso that objects of the same color are adjacent, with the colors in the order red, white, and blue.\n\n\nWe will use the integers \n0\n, \n1\n, and \n2\n to represent the color red, white, and blue, respectively.\n\n\nYou must solve this problem without using the library's sort function.\n\n\n \n\n\nExample 1:\n\n\n\n\nInput:\n nums = [2,0,2,1,1,0]\n\nOutput:\n [0,0,1,1,2,2]\n\n\n\nExample 2:\n\n\n\n\nInput:\n nums = [2,0,1]\n\nOutput:\n [0,1,2]\n\n\n\n \n\n\nConstraints:\n\n\n\n\nn == nums.length\n\n\n1 <= n <= 300\n\n\nnums[i]\n is either \n0\n, \n1\n, or \n2\n.\n\n\n\n\n \n\n\nFollow up:\n Could you come up with a one-pass algorithm using only constant extra space?",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "url": "https://leetcode.com/problems/sort-colors/"
+  }
+]
